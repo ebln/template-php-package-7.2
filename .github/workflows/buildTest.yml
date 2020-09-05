@@ -16,19 +16,20 @@ jobs:
     - name: Install dependencies
       run: composer install --prefer-dist --no-progress --no-suggest
     - name: Check composer.json
-      run: composer normalize --dry-run"
+      run: composer normalize --dry-run
     - name: Unit tests
       run: |
         ./vendor/bin/phpunit --no-coverage --colors=never
     - name: Psalm
       run: |
+        mkdir --parents ./src ./tests
         ./vendor/bin/psalm --monochrome --no-progress --stats --show-info=false
     - name: phpstan
       run: |
         ./vendor/bin/phpstan --no-interaction --no-ansi analyse
     - name: Mess Detector
       run: |
-        ./vendor/bin/phpmd src,tests text naming #,codesize,design
+        ./vendor/bin/phpmd src,tests json naming codesize design
     - name: php-cs-fixer
       run: |
         ./vendor/bin/php-cs-fixer fix -v --config=.php_cs.dist --using-cache=no --dry-run
