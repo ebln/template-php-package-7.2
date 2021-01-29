@@ -1,10 +1,10 @@
-Template for composer packages
-==============================
+Template for composer packages (PHP 7.2 legacy edition)
+=======================================================
 
 **Quick start:**
 ```
 NEW_REPOSITORY_NAME=FOOBAR; \
-git clone https://github.com/ebln/template-php-package.git ${NEW_REPOSITORY_NAME} && cd ${NEW_REPOSITORY_NAME}
+git clone https://github.com/ebln/template-php-package-7.2.git ${NEW_REPOSITORY_NAME} && cd ${NEW_REPOSITORY_NAME}
 
 git remote set-url origin git@github.com-ebln:ebln/${NEW_REPOSITORY_NAME}.git
 git push --set-upstream origin master
@@ -31,7 +31,7 @@ git push --set-upstream origin master
 * Clone this boilerplate
     * ```bash
       NEW_PROJECT_NAME=FOOBAR; \
-      git clone https://github.com/ebln/template-php-package.git ${NEW_PROJECT_NAME} && cd ${NEW_PROJECT_NAME}  
+      git clone https://github.com/ebln/template-php-package-7.2.git ${NEW_PROJECT_NAME} && cd ${NEW_PROJECT_NAME}  
       ```
 * Setup git
     * Create a new (origin) repository
