@@ -1,5 +1,7 @@
-Template for composer packages (PHP 7.2 legacy edition)
-=======================================================
+DEPRECATED as PHP 7.2 is beyond »End of live«
+=============================================
+
+## Template for composer packages (PHP 7.2 legacy edition)
 
 **Quick start:**
 ```
